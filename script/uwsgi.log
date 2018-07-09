@@ -1,0 +1,701 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 13:08:23 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x160f1c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x160f1c0 pid: 10024 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10024)
+spawned uWSGI worker 1 (pid: 10032, cores: 1)
+spawned uWSGI worker 2 (pid: 10033, cores: 1)
+spawned uWSGI worker 3 (pid: 10034, cores: 1)
+spawned uWSGI worker 4 (pid: 10035, cores: 1)
+spawned uWSGI worker 5 (pid: 10036, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 13:09:23 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x24281c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x24281c0 pid: 10090 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10090)
+spawned uWSGI worker 1 (pid: 10099, cores: 1)
+spawned uWSGI worker 2 (pid: 10100, cores: 1)
+spawned uWSGI worker 3 (pid: 10101, cores: 1)
+spawned uWSGI worker 4 (pid: 10102, cores: 1)
+spawned uWSGI worker 5 (pid: 10103, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 13:11:27 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1b741c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1b741c0 pid: 10114 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10114)
+spawned uWSGI worker 1 (pid: 10124, cores: 1)
+spawned uWSGI worker 2 (pid: 10125, cores: 1)
+spawned uWSGI worker 3 (pid: 10126, cores: 1)
+spawned uWSGI worker 4 (pid: 10127, cores: 1)
+spawned uWSGI worker 5 (pid: 10128, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 13:14:28 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0xcdb1c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xcdb1c0 pid: 10247 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10247)
+spawned uWSGI worker 1 (pid: 10264, cores: 1)
+spawned uWSGI worker 2 (pid: 10265, cores: 1)
+spawned uWSGI worker 3 (pid: 10266, cores: 1)
+spawned uWSGI worker 4 (pid: 10267, cores: 1)
+spawned uWSGI worker 5 (pid: 10268, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 13:59:32 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1bd21c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1bd21c0 pid: 10471 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10471)
+spawned uWSGI worker 1 (pid: 10488, cores: 1)
+spawned uWSGI worker 2 (pid: 10489, cores: 1)
+spawned uWSGI worker 3 (pid: 10490, cores: 1)
+spawned uWSGI worker 4 (pid: 10491, cores: 1)
+spawned uWSGI worker 5 (pid: 10492, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 14:06:33 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1903250
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1903250 pid: 11825 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11825)
+spawned uWSGI worker 1 (pid: 11843, cores: 1)
+spawned uWSGI worker 2 (pid: 11844, cores: 1)
+spawned uWSGI worker 3 (pid: 11845, cores: 1)
+spawned uWSGI worker 4 (pid: 11846, cores: 1)
+spawned uWSGI worker 5 (pid: 11847, cores: 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 14:08:29 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1beb1c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1beb1c0 pid: 11866 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11866)
+spawned uWSGI worker 1 (pid: 11870, cores: 1)
+spawned uWSGI worker 2 (pid: 11871, cores: 1)
+spawned uWSGI worker 3 (pid: 11872, cores: 1)
+spawned uWSGI worker 4 (pid: 11873, cores: 1)
+spawned uWSGI worker 5 (pid: 11874, cores: 1)
+Not Found: /404.html
+[pid: 11871|app: 0|req: 1/1] 10.10.4.115 () {42 vars in 726 bytes} [Mon Jul  9 14:28:14 2018] GET /static/index.html => generated 2069 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 11874|app: 0|req: 1/2] 10.10.4.115 () {44 vars in 719 bytes} [Mon Jul  9 14:28:14 2018] GET /favicon.ico => generated 2078 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 11873|app: 0|req: 1/3] 10.10.4.115 () {42 vars in 726 bytes} [Mon Jul  9 14:28:23 2018] GET /static/index.html => generated 2069 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 1/4] 10.10.4.115 () {40 vars in 692 bytes} [Mon Jul  9 14:28:34 2018] GET /polls/login => generated 619 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css
+[pid: 11874|app: 0|req: 2/5] 10.10.4.115 () {40 vars in 741 bytes} [Mon Jul  9 14:28:34 2018] GET /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css => generated 2231 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js
+[pid: 11873|app: 0|req: 2/6] 10.10.4.115 () {40 vars in 708 bytes} [Mon Jul  9 14:28:34 2018] GET /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js => generated 2204 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/vendor.d27410be876735565f26.js
+[pid: 11874|app: 0|req: 3/7] 10.10.4.115 () {40 vars in 704 bytes} [Mon Jul  9 14:28:34 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2198 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/app.f743244621973a5d5e6b.js
+[pid: 11873|app: 0|req: 3/8] 10.10.4.115 () {40 vars in 698 bytes} [Mon Jul  9 14:28:34 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2189 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/favicon.ico
+[pid: 11874|app: 0|req: 4/9] 10.10.4.115 () {40 vars in 682 bytes} [Mon Jul  9 14:28:34 2018] GET /web-client/favicon.ico => generated 2111 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css
+[pid: 11871|app: 0|req: 2/10] 10.10.4.115 () {40 vars in 741 bytes} [Mon Jul  9 14:28:36 2018] GET /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css => generated 2231 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 1/11] 10.10.4.115 () {42 vars in 723 bytes} [Mon Jul  9 14:28:42 2018] GET /polls/login => generated 619 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js
+[pid: 11874|app: 0|req: 5/12] 10.10.4.115 () {40 vars in 708 bytes} [Mon Jul  9 14:28:42 2018] GET /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js => generated 2204 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/vendor.d27410be876735565f26.js
+[pid: 11871|app: 0|req: 3/13] 10.10.4.115 () {40 vars in 704 bytes} [Mon Jul  9 14:28:42 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2198 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css
+[pid: 11872|app: 0|req: 2/14] 10.10.4.115 () {40 vars in 741 bytes} [Mon Jul  9 14:28:42 2018] GET /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css => generated 2231 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/app.f743244621973a5d5e6b.js
+[pid: 11870|app: 0|req: 2/15] 10.10.4.115 () {40 vars in 698 bytes} [Mon Jul  9 14:28:42 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2189 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/vendor.d27410be876735565f26.js
+[pid: 11874|app: 0|req: 6/16] 10.10.4.115 () {40 vars in 704 bytes} [Mon Jul  9 14:28:42 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2198 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/app.f743244621973a5d5e6b.js
+[pid: 11874|app: 0|req: 7/17] 10.10.4.115 () {40 vars in 698 bytes} [Mon Jul  9 14:28:42 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2189 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 11874|app: 0|req: 8/18] 10.10.4.115 () {40 vars in 695 bytes} [Mon Jul  9 14:28:51 2018] GET /static/index.html => generated 2069 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index.html
+[pid: 11874|app: 0|req: 9/19] 10.10.4.115 () {40 vars in 690 bytes} [Mon Jul  9 14:29:07 2018] GET /index.html => generated 2075 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 11871|app: 0|req: 4/20] 10.10.4.115 () {40 vars in 702 bytes} [Mon Jul  9 14:31:34 2018] GET /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css => generated 2069 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 11874|app: 0|req: 10/21] 10.10.4.115 () {40 vars in 678 bytes} [Mon Jul  9 14:31:34 2018] GET /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js => generated 2069 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 11873|app: 0|req: 4/22] 10.10.4.115 () {40 vars in 676 bytes} [Mon Jul  9 14:31:34 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2069 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 11873|app: 0|req: 5/23] 10.10.4.115 () {40 vars in 673 bytes} [Mon Jul  9 14:31:34 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2069 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 11874|app: 0|req: 11/24] 10.10.4.115 () {40 vars in 676 bytes} [Mon Jul  9 14:31:34 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2069 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /404.html
+[pid: 11873|app: 0|req: 6/25] 10.10.4.115 () {40 vars in 673 bytes} [Mon Jul  9 14:31:34 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2069 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 11870|app: 0|req: 3/26] 10.10.4.115 () {40 vars in 729 bytes} [Mon Jul  9 14:31:44 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2069 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /404.html
+[pid: 11872|app: 0|req: 3/27] 10.10.4.115 () {40 vars in 693 bytes} [Mon Jul  9 14:33:35 2018] GET /dist/indxe.html => generated 2069 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/0.8b320314eed54b4c788e.js
+[pid: 11871|app: 0|req: 5/28] 10.10.4.115 () {40 vars in 698 bytes} [Mon Jul  9 14:33:40 2018] GET /web-client/static/js/0.8b320314eed54b4c788e.js => generated 2183 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /
+[pid: 11874|app: 0|req: 12/29] 10.10.4.125 () {40 vars in 679 bytes} [Mon Jul  9 14:39:37 2018] GET / => generated 2027 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 11874|app: 0|req: 13/30] 10.10.4.125 () {40 vars in 658 bytes} [Mon Jul  9 14:39:38 2018] GET /favicon.ico => generated 2078 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /polls
+[pid: 11874|app: 0|req: 14/31] 10.10.4.125 () {40 vars in 689 bytes} [Mon Jul  9 14:39:43 2018] GET /polls => generated 2060 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /polls/
+[pid: 11874|app: 0|req: 15/32] 10.10.4.125 () {40 vars in 691 bytes} [Mon Jul  9 14:39:47 2018] GET /polls/ => generated 2640 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11873|app: 0|req: 7/33] 10.10.4.125 () {40 vars in 701 bytes} [Mon Jul  9 14:39:52 2018] GET /polls/login => generated 565 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/0.8b320314eed54b4c788e.js
+[pid: 11874|app: 0|req: 16/34] 10.10.4.125 () {40 vars in 703 bytes} [Mon Jul  9 14:39:52 2018] GET /web-client/static/js/0.8b320314eed54b4c788e.js => generated 2183 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/0.8b320314eed54b4c788e.js
+[pid: 11874|app: 0|req: 17/35] 10.10.4.125 () {40 vars in 771 bytes} [Mon Jul  9 14:47:02 2018] GET /web-client/static/js/0.8b320314eed54b4c788e.js => generated 2183 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/disk/static/js/0.8b320314eed54b4c788e.js
+[pid: 11871|app: 0|req: 6/36] 10.10.4.125 () {40 vars in 781 bytes} [Mon Jul  9 14:47:10 2018] GET /web-client/disk/static/js/0.8b320314eed54b4c788e.js => generated 2198 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 4/37] 10.10.4.125 () {40 vars in 701 bytes} [Mon Jul  9 14:47:47 2018] GET /polls/login => generated 565 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/0.8b320314eed54b4c788e.js
+[pid: 11873|app: 0|req: 8/38] 10.10.4.125 () {40 vars in 703 bytes} [Mon Jul  9 14:47:47 2018] GET /web-client/static/js/0.8b320314eed54b4c788e.js => generated 2183 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 4/39] 10.10.4.125 () {40 vars in 701 bytes} [Mon Jul  9 14:47:54 2018] GET /polls/login => generated 565 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/0.8b320314eed54b4c788e.js
+[pid: 11872|app: 0|req: 5/40] 10.10.4.125 () {40 vars in 703 bytes} [Mon Jul  9 14:47:55 2018] GET /web-client/static/js/0.8b320314eed54b4c788e.js => generated 2183 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 18/41] 10.10.4.125 () {44 vars in 754 bytes} [Mon Jul  9 14:52:07 2018] GET /polls/login => generated 565 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/0.8b320314eed54b4c788e.js
+[pid: 11872|app: 0|req: 6/42] 10.10.4.125 () {44 vars in 756 bytes} [Mon Jul  9 14:52:07 2018] GET /web-client/static/js/0.8b320314eed54b4c788e.js => generated 2183 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 7/43] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 14:56:54 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css
+[pid: 11873|app: 0|req: 9/44] 10.10.4.125 () {40 vars in 750 bytes} [Mon Jul  9 14:56:54 2018] GET /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css => generated 2231 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js
+[pid: 11874|app: 0|req: 19/45] 10.10.4.125 () {40 vars in 717 bytes} [Mon Jul  9 14:56:54 2018] GET /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js => generated 2204 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/vendor.d27410be876735565f26.js
+[pid: 11871|app: 0|req: 7/46] 10.10.4.125 () {40 vars in 713 bytes} [Mon Jul  9 14:56:54 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2198 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/app.f743244621973a5d5e6b.js
+[pid: 11873|app: 0|req: 10/47] 10.10.4.125 () {40 vars in 707 bytes} [Mon Jul  9 14:56:54 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2189 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/app.f743244621973a5d5e6b.js
+[pid: 11874|app: 0|req: 20/48] 10.10.4.125 () {40 vars in 707 bytes} [Mon Jul  9 14:56:54 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2189 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/favicon.ico
+[pid: 11874|app: 0|req: 21/49] 10.10.4.125 () {40 vars in 691 bytes} [Mon Jul  9 14:56:54 2018] GET /web-client/favicon.ico => generated 2111 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11874|app: 0|req: 22/50] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 14:56:58 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css
+[pid: 11874|app: 0|req: 23/51] 10.10.4.125 () {40 vars in 750 bytes} [Mon Jul  9 14:56:58 2018] GET /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css => generated 2231 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js
+[pid: 11873|app: 0|req: 11/52] 10.10.4.125 () {40 vars in 717 bytes} [Mon Jul  9 14:56:58 2018] GET /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js => generated 2204 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/vendor.d27410be876735565f26.js
+[pid: 11874|app: 0|req: 24/53] 10.10.4.125 () {40 vars in 713 bytes} [Mon Jul  9 14:56:58 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2198 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /web-client/static/js/app.f743244621973a5d5e6b.js
+[pid: 11871|app: 0|req: 8/54] 10.10.4.125 () {40 vars in 707 bytes} [Mon Jul  9 14:56:58 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2189 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11874|app: 0|req: 25/55] 10.10.4.125 () {44 vars in 754 bytes} [Mon Jul  9 14:57:07 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+Not Found: /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css
+[pid: 11870|app: 0|req: 5/56] 10.10.4.125 () {44 vars in 803 bytes} [Mon Jul  9 14:57:07 2018] GET /web-client/static/css/app.a3a95998b12bada4c103481b27b9558f.css => generated 2231 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js
+[pid: 11872|app: 0|req: 8/57] 10.10.4.125 () {44 vars in 770 bytes} [Mon Jul  9 14:57:07 2018] GET /web-client/static/js/manifest.f96de4d23bc88f5d5eb0.js => generated 2204 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/vendor.d27410be876735565f26.js
+[pid: 11871|app: 0|req: 9/58] 10.10.4.125 () {44 vars in 766 bytes} [Mon Jul  9 14:57:07 2018] GET /web-client/static/js/vendor.d27410be876735565f26.js => generated 2198 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/app.f743244621973a5d5e6b.js
+[pid: 11874|app: 0|req: 26/59] 10.10.4.125 () {44 vars in 760 bytes} [Mon Jul  9 14:57:07 2018] GET /web-client/static/js/app.f743244621973a5d5e6b.js => generated 2189 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11871|app: 0|req: 10/60] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 14:59:19 2018] GET /polls/login => generated 564 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /web-client/static/js/0.8b320314eed54b4c788e.js
+[pid: 11874|app: 0|req: 27/61] 10.10.4.125 () {40 vars in 703 bytes} [Mon Jul  9 14:59:19 2018] GET /web-client/static/js/0.8b320314eed54b4c788e.js => generated 2183 bytes in 2 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11874|app: 0|req: 28/62] 10.10.4.125 () {44 vars in 754 bytes} [Mon Jul  9 15:05:52 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 29/63] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:06:04 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 30/64] 10.10.4.125 () {44 vars in 754 bytes} [Mon Jul  9 15:06:34 2018] GET /polls/login => generated 619 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 6/65] 10.10.4.125 () {44 vars in 754 bytes} [Mon Jul  9 15:07:14 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 9/66] 10.10.4.125 () {44 vars in 754 bytes} [Mon Jul  9 15:07:19 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 10/67] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:07:21 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 7/68] 10.10.4.125 () {40 vars in 701 bytes} [Mon Jul  9 15:07:57 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 11/69] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:08:20 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 8/70] 10.10.4.116 () {40 vars in 701 bytes} [Mon Jul  9 15:08:29 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 12/71] 10.10.4.116 () {42 vars in 732 bytes} [Mon Jul  9 15:08:38 2018] GET /polls/login => generated 619 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 31/72] 10.10.4.116 () {44 vars in 764 bytes} [Mon Jul  9 15:09:21 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 32/73] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:13:08 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 11873|app: 0|req: 12/74] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:13:09 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 11874|app: 0|req: 33/75] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:13:09 2018] GET /polls/login => generated 619 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 11870|app: 0|req: 9/76] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:14:58 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 13/77] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:14:58 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 34/78] 10.10.4.125 () {42 vars in 732 bytes} [Mon Jul  9 15:14:59 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 35/79] 10.10.4.125 () {44 vars in 781 bytes} [Mon Jul  9 15:15:40 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 11874|app: 0|req: 36/80] 10.10.4.125 () {42 vars in 750 bytes} [Mon Jul  9 15:15:56 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 37/81] 10.10.4.125 () {42 vars in 750 bytes} [Mon Jul  9 15:15:56 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11874|app: 0|req: 38/82] 10.10.4.125 () {42 vars in 750 bytes} [Mon Jul  9 15:16:04 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /polls/
+[pid: 11870|app: 0|req: 10/83] 10.10.4.125 () {42 vars in 740 bytes} [Mon Jul  9 15:16:16 2018] GET /polls/ => generated 2640 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 11872|app: 0|req: 14/84] 10.10.4.125 () {42 vars in 713 bytes} [Mon Jul  9 15:16:16 2018] GET /favicon.ico => generated 2078 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 11/85] 10.10.4.125 () {42 vars in 750 bytes} [Mon Jul  9 15:16:29 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 15/86] 10.10.4.125 () {44 vars in 781 bytes} [Mon Jul  9 15:16:34 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 12/87] 10.10.4.125 () {44 vars in 781 bytes} [Mon Jul  9 15:16:35 2018] GET /polls/login => generated 619 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11870|app: 0|req: 13/88] 10.10.4.125 () {44 vars in 781 bytes} [Mon Jul  9 15:16:35 2018] GET /polls/login => generated 619 bytes in 0 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 11872|app: 0|req: 16/89] 10.10.4.125 () {44 vars in 781 bytes} [Mon Jul  9 15:16:36 2018] GET /polls/login => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /polls/
+[pid: 11874|app: 0|req: 39/90] 10.10.4.125 () {42 vars in 740 bytes} [Mon Jul  9 15:16:57 2018] GET /polls/ => generated 2640 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 15:18:21 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1bb51c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1bb51c0 pid: 12745 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12745)
+spawned uWSGI worker 1 (pid: 12762, cores: 1)
+spawned uWSGI worker 2 (pid: 12763, cores: 1)
+spawned uWSGI worker 3 (pid: 12764, cores: 1)
+spawned uWSGI worker 4 (pid: 12765, cores: 1)
+spawned uWSGI worker 5 (pid: 12766, cores: 1)
+[pid: 12765|app: 0|req: 1/1] 10.10.4.125 () {42 vars in 738 bytes} [Mon Jul  9 15:18:29 2018] GET /polls => generated 0 bytes in 7 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 12765|app: 0|req: 2/2] 10.10.4.125 () {42 vars in 740 bytes} [Mon Jul  9 15:18:29 2018] GET /polls/ => generated 619 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 12765|app: 0|req: 3/3] 10.10.4.125 () {44 vars in 771 bytes} [Mon Jul  9 15:18:41 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 12765|app: 0|req: 4/4] 10.10.4.125 () {44 vars in 771 bytes} [Mon Jul  9 15:20:00 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 12762|app: 0|req: 1/5] 10.10.4.125 () {42 vars in 722 bytes} [Mon Jul  9 15:20:20 2018] GET /polls/ => generated 619 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 15:33:58 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1cd81c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1cd81c0 pid: 12790 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12790)
+spawned uWSGI worker 1 (pid: 12809, cores: 1)
+spawned uWSGI worker 2 (pid: 12810, cores: 1)
+spawned uWSGI worker 3 (pid: 12811, cores: 1)
+spawned uWSGI worker 4 (pid: 12812, cores: 1)
+spawned uWSGI worker 5 (pid: 12813, cores: 1)
+[pid: 12811|app: 0|req: 1/1] 10.10.4.125 () {42 vars in 722 bytes} [Mon Jul  9 15:34:13 2018] GET /polls/ => generated 619 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 12813|app: 0|req: 1/2] 10.10.4.125 () {44 vars in 744 bytes} [Mon Jul  9 15:34:16 2018] GET /polls/ => generated 619 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 12813|app: 0|req: 2/3] 10.10.4.125 () {42 vars in 722 bytes} [Mon Jul  9 15:34:33 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 12813|app: 0|req: 3/4] 10.10.4.125 () {44 vars in 744 bytes} [Mon Jul  9 15:34:35 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /polls/login
+[pid: 12811|app: 0|req: 2/5] 10.10.4.116 () {44 vars in 764 bytes} [Mon Jul  9 15:38:22 2018] GET /polls/login => generated 2650 bytes in 5 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /favicon.ico
+[pid: 12810|app: 0|req: 1/6] 10.10.4.116 () {42 vars in 701 bytes} [Mon Jul  9 15:38:23 2018] GET /favicon.ico => generated 2078 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 12813|app: 0|req: 4/7] 10.10.4.125 () {42 vars in 722 bytes} [Mon Jul  9 15:39:48 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 12813|app: 0|req: 5/8] 10.10.4.125 () {44 vars in 766 bytes} [Mon Jul  9 15:40:11 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 12811|app: 0|req: 3/9] 10.10.4.125 () {44 vars in 766 bytes} [Mon Jul  9 15:43:45 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 15:51:59 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1dcb1c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1dcb1c0 pid: 14140 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14140)
+spawned uWSGI worker 1 (pid: 14158, cores: 1)
+spawned uWSGI worker 2 (pid: 14159, cores: 1)
+spawned uWSGI worker 3 (pid: 14160, cores: 1)
+spawned uWSGI worker 4 (pid: 14161, cores: 1)
+spawned uWSGI worker 5 (pid: 14162, cores: 1)
+[pid: 14160|app: 0|req: 1/1] 10.10.4.125 () {44 vars in 766 bytes} [Mon Jul  9 15:52:03 2018] GET /polls/ => generated 619 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 14159|app: 0|req: 1/2] 10.10.4.125 () {46 vars in 788 bytes} [Mon Jul  9 15:52:08 2018] GET /polls/ => generated 619 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/ysh/mysite/script/uwsgi.sock removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 15:54:07 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x10d71c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x10d71c0 pid: 14252 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14252)
+spawned uWSGI worker 1 (pid: 14269, cores: 1)
+spawned uWSGI worker 2 (pid: 14270, cores: 1)
+spawned uWSGI worker 3 (pid: 14271, cores: 1)
+spawned uWSGI worker 4 (pid: 14272, cores: 1)
+spawned uWSGI worker 5 (pid: 14273, cores: 1)
+[pid: 14273|app: 0|req: 1/1] 10.10.4.125 () {46 vars in 788 bytes} [Mon Jul  9 15:54:12 2018] GET /polls/ => generated 619 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 14271|app: 0|req: 1/2] 10.10.4.125 () {44 vars in 766 bytes} [Mon Jul  9 15:55:42 2018] GET /polls/ => generated 619 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 14270|app: 0|req: 1/3] 10.10.4.125 () {40 vars in 691 bytes} [Mon Jul  9 15:55:57 2018] GET /polls/ => generated 619 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 14273|app: 0|req: 2/4] 10.10.4.125 () {46 vars in 796 bytes} [Mon Jul  9 16:03:15 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 14269|app: 0|req: 1/5] 10.10.4.125 () {42 vars in 740 bytes} [Mon Jul  9 16:57:00 2018] GET /polls/ => generated 619 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Not Found: /
+[pid: 14271|app: 0|req: 2/6] 10.10.4.125 () {42 vars in 728 bytes} [Mon Jul  9 16:57:01 2018] GET / => generated 2027 bytes in 4 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 14271|app: 0|req: 3/7] 10.10.4.125 () {46 vars in 815 bytes} [Mon Jul  9 16:58:47 2018] GET /polls/ => generated 619 bytes in 1 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Jul  9 17:13:11 2018] ***
+compiled with version: 5.4.0 20160609 on 09 July 2018 04:06:08
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 6
+current working directory: /home/ysh/mysite/script
+writing pidfile to /home/ysh/mysite/script/uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ysh/mysite/
+your processes number limit is 26318
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ysh/mysite/script/uwsgi.sock fd 3
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x117c1c0
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 486576 bytes (475 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x117c1c0 pid: 1431 (default app)
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1431)
+spawned uWSGI worker 1 (pid: 1436, cores: 1)
+spawned uWSGI worker 2 (pid: 1437, cores: 1)
+spawned uWSGI worker 3 (pid: 1438, cores: 1)
+spawned uWSGI worker 4 (pid: 1439, cores: 1)
+spawned uWSGI worker 5 (pid: 1440, cores: 1)
+Not Found: /
+[pid: 1438|app: 0|req: 1/1] 10.10.4.125 () {44 vars in 740 bytes} [Mon Jul  9 17:13:15 2018] GET / => generated 2027 bytes in 25 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 1438|app: 0|req: 2/2] 10.10.4.125 () {46 vars in 741 bytes} [Mon Jul  9 17:13:15 2018] GET /favicon.ico => generated 2078 bytes in 3 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 1438|app: 0|req: 3/3] 10.10.4.125 () {42 vars in 719 bytes} [Mon Jul  9 17:13:19 2018] GET /polls => generated 0 bytes in 0 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 0)
+[pid: 1438|app: 0|req: 4/4] 10.10.4.125 () {42 vars in 721 bytes} [Mon Jul  9 17:13:19 2018] GET /polls/ => generated 619 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
