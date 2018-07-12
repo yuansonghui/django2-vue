@@ -76,11 +76,17 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'mysite',
+        'USER': 'root',
+        'PASSWORD': 'ysh123456',
     }
 }
 
+MYSQL_PATH = 'mysql+pymysql://root:ysh123456@10.10.7.9:3306/mysite'
+
+ADMIN_INFO = {'name': 'admin', 'passwd': '21232f297a57a5a743894a0e4a801fc3',
+              'role': 'manager', 'email': '540309204@qq.com'}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

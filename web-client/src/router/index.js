@@ -72,6 +72,19 @@ export const constantRouterMap = [
     ]
   },
 
+  {
+    path: '/user',
+    component: Layout,
+    children: [
+      {
+        path: 'table',
+        name: 'Table',
+        component: () => import('@/views/table/index'),
+        meta: { title: 'Table', icon: 'table' }
+      }
+    ]
+  },
+
   { path: '*', redirect: '/404', hidden: true }
 ]
 
