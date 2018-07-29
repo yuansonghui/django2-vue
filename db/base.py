@@ -1,12 +1,9 @@
 
 from mysite import settings
-from sqlalchemy.ext.declarative import declarative_base
+
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from sqlalchemy.pool import NullPool
-
-
-Base = declarative_base()
 
 
 def get_session(autocommit=True, expire_on_commit=False):

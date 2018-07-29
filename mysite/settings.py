@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -83,10 +82,11 @@ DATABASES = {
     }
 }
 
-MYSQL_PATH = 'mysql+pymysql://root:ysh123456@10.10.7.9:3306/mysite'
+# MYSQL_PATH = 'mysql+pymysql://root:ysh123456@127.0.0.1:3306/mysite'
+MYSQL_PATH = 'mysql+mysqlconnector://root:ysh123456@127.0.0.1:3306/mysite'
 
 ADMIN_INFO = {'name': 'admin', 'passwd': '21232f297a57a5a743894a0e4a801fc3',
-              'role': 'manager', 'email': '540309204@qq.com'}
+              'role': 'administrator', 'email': '540309204@qq.com'}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

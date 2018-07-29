@@ -1,21 +1,26 @@
 from common.base import utcnow
-from sqlalchemy import Column, Integer, BigInteger, Float, Boolean, String, Text, DateTime, ForeignKey, Table, Index
-from sqlalchemy.orm import relationship, backref
-from db.base import Base, get_session
+from sqlalchemy import Column, Integer, Boolean, String, DateTime
+from db.base import get_session
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
 
 
 class MysiteBase(object):
     id = Column(Integer, autoincrement=True, primary_key=True)
+    status = Column(String(length=255), nullable=True)
+    state = Column(String(length=255), nullable=True)
     created_at = Column(DateTime, default=utcnow)
-    updated_at = Column(DateTime, default=utcnow)
-    deleted_at = Column(DateTime, default=utcnow)
+    updated_at = Column(DateTime, nullable=True)
+    deleted_at = Column(DateTime, nullable=True)
+    deleted = Column(Boolean, default=False)
 
     def __init__(self):
         self._i = None
 
-    def __iter__(self):
-        self._i = iter(object_mapper(self).columns)
-        return self
+    # def __iter__(self):
+    #     self._i = iter(object_mapper(self).columns)
+    #     return self
 
     def next(self):
         n = self._i.next().name
@@ -39,13 +44,14 @@ class MysiteBase(object):
             setattr(self, k, v)
 
 
-class User(MysiteBase):
-    name = Column(String(length=64), nullable=False, unique=True)
-    passwd = Column(String(length=64), nullable=False)
-    email = Column(String(length=128), nullable=True)
-    role = Column(String(max_length=255), default='member')
-    token = Column(String(max_length=255), nullable=True)
-    phone = Column(String(max_length=32), nullable=True)
+class User(Base, MysiteBase):
+    __tablename__ = 'user'
+    username = Column(String(64), nullable=False)
+    passwd = Column(String(64), nullable=False)
+    email = Column(String(128), nullable=True)
+    role = Column(String(255), default='member')
+    token = Column(String(255), nullable=True)
+    phone = Column(String(32), nullable=True)
 
     def __str__(self):
         return '%s' % (self.name)
