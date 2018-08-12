@@ -18,11 +18,19 @@ import os
 import django
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 django.setup()
+
 from django.contrib import admin
 from django.urls import path, include
-# from . import views
+# from mysite import views
+from django.views.generic.base import TemplateView
+# from rest_framework.authtoken import views
+from rest_framework_jwt.views import obtain_jwt_token
+
+
 urlpatterns = [
-    path('polls/', include('polls.urls')),
-    path('admin/', admin.site.urls),
-    path('user/', include('api.urls.users')),
+    # path(r'polls/', include('polls.urls')),
+    path(r'admin/', admin.site.urls),
+    path(r'api/user/', include('api.urls.users')),
+    path(r'api/login/', obtain_jwt_token),
+    path('', TemplateView.as_view(template_name="index.html")),
 ]

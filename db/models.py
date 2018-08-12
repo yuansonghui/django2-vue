@@ -1,7 +1,8 @@
 from common.base import utcnow
-from sqlalchemy import Column, Integer, Boolean, String, DateTime
+from sqlalchemy import Column, Integer, Boolean, String, DateTime, ForeignKey
 from db.base import get_session
 from sqlalchemy.ext.declarative import declarative_base
+from django.contrib.auth.models import User as auth_user
 
 Base = declarative_base()
 
@@ -44,17 +45,25 @@ class MysiteBase(object):
             setattr(self, k, v)
 
 
-class User(Base, MysiteBase):
-    __tablename__ = 'user'
-    username = Column(String(64), nullable=False)
-    passwd = Column(String(64), nullable=False)
-    email = Column(String(128), nullable=True)
-    role = Column(String(255), default='member')
-    token = Column(String(255), nullable=True)
-    phone = Column(String(32), nullable=True)
+# class UserExtend(Base, MysiteBase):
+#     __tablename__ = 'user_extend'
+#     username = Column(String(150), ForeignKey("auth_user.username"))
+#     # passwd = Column(String(64), nullable=False)
+#     # email = Column(String(128), nullable=True)
+#     role = Column(String(255), default='member')
+#     phone = Column(String(32), nullable=True)
 
-    def __str__(self):
-        return '%s' % (self.name)
+#     def __str__(self):
+#         return '%s' % (self.name)
 
-    def get_token(self):
-        return '%s:%s' % (self.name, self.token)
+#     def get_token(self):
+#         return '%s:%s' % (self.name, self.token)
+
+
+# class LoginToken(Base):
+#     __tablename__ = 'login_token'
+#     id = Column(Integer, autoincrement=True, primary_key=True)
+#     username = Column(String(64), nullable=False)
+#     role = Column(String(255), default='member')
+#     token = Column(String(64))
+#     # server_dbid = Column(Integer, ForeignKey("sdsom_server.id"), nullable=True)

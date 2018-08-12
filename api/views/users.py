@@ -1,28 +1,43 @@
-from rest_framework.decorators import api_view
+import hashlib
+import time
+
+# from rest_framework.decorators import api_view
+# from django.views.decorators.csrf import ensure_csrf_cookie
+# from django.contrib.auth import get_user_model, authenticate, login as auth_login, logout as auth_logout
+
 from api.views.base_views import SuccResponse, ErrorResponse, BaseViewSet
-from db.api import users
+from django.contrib.auth.models import User
+# from db.api import users as db_users
 
 
 class UserViewSet(BaseViewSet):
     """docstring for UserViewSet"""
 
-    @api_view(['GET'])
-    def list_users(request):
-        result = users.list_users()
+    def __init__(self, *args, **kwargs):
+        super(UserViewSet, self).__init__(*args, **kwargs)
+
+    def list_users(self, request):
+        result = []
+        user_query = User.objects.all()
+        for item in user_query:
+            user = {}
+            user['id'] = item.id
+            user['username'] = item.username
+            user['is_active'] = item.is_active
+            user['email'] = item.email
+            user['roles'] = ['superuser'] if item.is_superuser else ['member']
+            result.append(user)
         return SuccResponse(data=result)
 
-    @api_view(['POST'])
-    def create_user(request):
-        data = request.data
-        name = data.get('name')
-        password = data.get('password')
-        email = data.get('email')
-        role = data.get('role')
-        phone = data.get('phone')
-        if not name or not password:
-            return ErrorResponse('Name and password is requested!')
-        code, message = users.create_user(name, password, email, role, phone)
-        if code == 0:
-            return ErrorResponse(message=message)
-        elif code == 1:
-            return SuccResponse(message=message)
+    def get_user(self, request):
+        item = User.objects.filter(username=request.user.username).first()
+        user = {}
+        user['id'] = item.id
+        user['username'] = item.username
+        user['is_active'] = item.is_active
+        user['email'] = item.email
+        user['roles'] = ['superuser'] if item.is_superuser else ['member']
+        return SuccResponse(data=user)
+
+    def logout(self, request):
+        return SuccResponse()

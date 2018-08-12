@@ -1,16 +1,14 @@
 # mysite
 # python 依赖
-  - python=3.5/3.6
-  - django=2.0.5
-  - uwsgi=2.0.17.1
-  - sqlalchemy=1.2.9
-  - mysqlclient=1.3.13
-  - mysql-connector=2.1.6
-  - python-dateutil=2.7.3
-  - djangorestframework=3.8.2
+  - 安装requirements.txt 依赖包
+
 # 前端框架
   - vue
   
 # 其它
   - nginx
   - mariadb=10.2.16
+
+# 注意事件:
+  - 执行start.sh stop.sh 脚本时，需要相关python 环境变量
+  - 首次运行请手动创建mysite 数据库， 并创建django superuser
