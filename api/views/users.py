@@ -17,6 +17,9 @@ class UserViewSet(BaseViewSet):
         super(UserViewSet, self).__init__(*args, **kwargs)
 
     def list_users(self, request):
+        """
+        获取所有用户信息
+        """
         result = []
         user_query = User.objects.all()
         for item in user_query:
@@ -30,6 +33,9 @@ class UserViewSet(BaseViewSet):
         return SuccResponse(data=result)
 
     def get_user(self, request):
+        """
+        获取登录用户信息, 包括用户名, 邮箱, 角色等.
+        """
         item = User.objects.filter(username=request.user.username).first()
         user = {}
         user['id'] = item.id
@@ -40,4 +46,17 @@ class UserViewSet(BaseViewSet):
         return SuccResponse(data=user)
 
     def logout(self, request):
+        """
+        注销用户
+        """
         return SuccResponse()
+
+    def create_user(self, request):
+        username = request.data.get('username')
+        password = request.data.get('password')
+        email = request.data.get('email', '')
+        if not username or not password:
+            return ErrorResponse('username and password is required!')
+        User.objects.create_user(username=username, password=password, email=email)
+        return SuccResponse()
+         

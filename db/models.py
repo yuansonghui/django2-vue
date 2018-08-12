@@ -2,7 +2,6 @@ from common.base import utcnow
 from sqlalchemy import Column, Integer, Boolean, String, DateTime, ForeignKey
 from db.base import get_session
 from sqlalchemy.ext.declarative import declarative_base
-from django.contrib.auth.models import User as auth_user
 
 Base = declarative_base()
 

@@ -31,7 +31,6 @@ APPEND_SLASH = False
 # Application definition
 
 INSTALLED_APPS = [
-    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -94,7 +93,10 @@ REST_FRAMEWORK = {
 }
 
 JWT_AUTH = {
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=1800),
+    # 表示issue出去的token多久过期，默认是5mins
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(seconds=300),
+    # 表示某个token被issue出去后，在多久间隔内可以用它来刷新以便获取新的token，默认是7天
+    'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=7),
 }
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
@@ -114,8 +116,7 @@ DATABASES = {
 # MYSQL_PATH = 'mysql+pymysql://root:ysh123456@127.0.0.1:3306/mysite'
 MYSQL_PATH = 'mysql+mysqlconnector://root:ysh123456@127.0.0.1:3306/mysite'
 
-ADMIN_INFO = {'name': 'admin', 'passwd': '21232f297a57a5a743894a0e4a801fc3',
-              'role': 'administrator', 'email': '540309204@qq.com'}
+ADMIN_INFO = {'name': 'admin', 'passwd': 'admin', 'role': 'superuser', 'email': '540309204@qq.com'}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators

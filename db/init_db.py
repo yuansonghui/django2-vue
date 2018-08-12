@@ -9,7 +9,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 
 from mysite import settings
 # from mysite import urls
-from models import UserExtend, Base, LoginToken
+from models import Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 

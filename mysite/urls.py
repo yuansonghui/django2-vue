@@ -21,16 +21,13 @@ django.setup()
 
 from django.contrib import admin
 from django.urls import path, include
-# from mysite import views
 from django.views.generic.base import TemplateView
-# from rest_framework.authtoken import views
 from rest_framework_jwt.views import obtain_jwt_token
 
 
 urlpatterns = [
-    # path(r'polls/', include('polls.urls')),
+    path('', TemplateView.as_view(template_name="index.html")),
     path(r'admin/', admin.site.urls),
     path(r'api/user/', include('api.urls.users')),
     path(r'api/login/', obtain_jwt_token),
-    path('', TemplateView.as_view(template_name="index.html")),
 ]
