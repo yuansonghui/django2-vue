@@ -21,7 +21,7 @@ module.exports = {
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
     proxyTable: {
       '/api': {
-        target: 'http://192.168.3.128',
+        target: 'http://10.10.7.9:9999',
         pathRewrite: { '^api': '' }
       }
     },
