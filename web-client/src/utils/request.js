@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { Message, MessageBox } from 'element-ui'
+import { Message, MessageBox, Notification } from 'element-ui'
 import store from '../store'
 import { getToken } from '@/utils/auth'
 
@@ -30,7 +30,8 @@ service.interceptors.response.use(
   * code为非20000是抛错 可结合自己业务进行修改
   */
     const res = response.data
-    if (res.code !== 20000 && response.status !==200) {
+    console.log('response')
+    if (res.code !== 200 && response.status !==200) {
       Message({
         message: res.message,
         type: 'error',
@@ -38,7 +39,7 @@ service.interceptors.response.use(
       })
 
       // 50008:非法的token; 50012:其他客户端登录了;  50014:Token 过期了;
-      if (res.code === 401 || response.status !== 401) {
+      if (res.code === 401 || response.status == 401) {
         MessageBox.confirm('你已被登出，可以取消继续留在该页面，或者重新登录', '确定登出', {
           confirmButtonText: '重新登录',
           cancelButtonText: '取消',
@@ -55,11 +56,9 @@ service.interceptors.response.use(
     }
   },
   error => {
-    console.log('err' + error)// for debug
-    Message({
+    Notification({
       message: error.message,
-      type: 'error',
-      duration: 5 * 1000
+      type: 'error'
     })
     return Promise.reject(error)
   }

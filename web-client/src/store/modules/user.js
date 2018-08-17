@@ -1,5 +1,6 @@
-import { login, logout, getInfo } from '@/api/login'
+// import { login, logout, getInfo } from '@/api/login'
 import { getToken, setToken, removeToken } from '@/utils/auth'
+import { baseApi } from '@/api/baseApi'
 import md5 from 'md5'
 
 const user = {
@@ -28,23 +29,19 @@ const user = {
   actions: {
     // 登录
     Login({ commit }, userInfo) {
-      const username = userInfo.username.trim()
-      return new Promise((resolve, reject) => {
-        login(username, userInfo.password).then(response => {
+      userInfo.username = userInfo.username.trim()
+      return baseApi({'data': userInfo, 'functionName': 'login'}).then(response => {
           const data = response
           setToken(data.token)
           commit('SET_TOKEN', data.token)
-          resolve()
-        }).catch(error => {
-          reject(error)
+          return data
         })
-      })
     },
 
     // 获取用户信息
     GetInfo({ commit, state }) {
       return new Promise((resolve, reject) => {
-        getInfo(state.token).then(response => {
+        baseApi({'functionName': 'getUserInfo', 'method': 'get'}).then(response => {
           const data = response.data
           if (data.roles && data.roles.length > 0) { // 验证返回的roles是否是一个非空数组
             commit('SET_ROLES', data.roles)
@@ -54,8 +51,6 @@ const user = {
           commit('SET_NAME', data.username)
           commit('SET_AVATAR', data.avatar)
           resolve(response)
-        }).catch(error => {
-          reject(error)
         })
       })
     },
@@ -63,7 +58,7 @@ const user = {
     // 登出
     LogOut({ commit, state }) {
       return new Promise((resolve, reject) => {
-        logout(state.token).then(() => {
+        baseApi({'functionName': 'logOut'}).then(() => {
           commit('SET_TOKEN', '')
           commit('SET_ROLES', [])
           removeToken()
@@ -80,6 +75,14 @@ const user = {
         commit('SET_TOKEN', '')
         removeToken()
         resolve()
+      })
+    },
+
+    //创建用户
+    CreateUser({ commit }, userInfo){
+      return baseApi({'data': userInfo, 'functionName': 'CreateUser'}).then(res =>{
+        console.log()
+      })
       })
     }
   }
