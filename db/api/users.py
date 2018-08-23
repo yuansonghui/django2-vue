@@ -39,19 +39,11 @@ from db.base import get_session, model_query
 #     return 1, 'Create user successfully!'
 
 
-# def user_authenticate(username, password):
-#     user = model_query(models.User).filter_by(username=username, passwd=password).first()
-#     if user:
-#         token = get_user_token(username)
-#         data = {}
-#         data['id'] = user.id
-#         data['username'] = user.username
-#         data['role'] = user.username
-#         data['email'] = user.email
-#         data['phone'] = user.phone
-#         data['token'] = token
-#         return data
-#     return None
+def user_authenticate(username, password):
+    user = model_query(models.User).filter_by(username=username, password=password).first()
+    if user:
+        return True
+    return False
 
 
 # def get_user_token(username):

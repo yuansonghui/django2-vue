@@ -1,14 +1,30 @@
 import hashlib
 import time
 
-# from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view
 # from django.views.decorators.csrf import ensure_csrf_cookie
 # from django.contrib.auth import get_user_model, authenticate, login as auth_login, logout as auth_logout
 
 from api.views.base_views import SuccResponse, ErrorResponse, BaseViewSet
 from django.contrib.auth.models import User
-# from db.api import users as db_users
+from db.api import users as db_users
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.response import Response
+from rest_framework.decorators import permission_classes
+from rest_framework.permissions import AllowAny
+# from rest_framework_jwt.views import obtain_jwt_token
 
+@api_view(['POST'])
+@permission_classes((AllowAny,))
+@csrf_exempt
+def login(request):
+    username = request.data.get('username')
+    password = request.data.get('password')
+    # import pdb;pdb.set_trace()
+    ret = db_users.user_authenticate(username, password)
+    return SuccResponse()
+    # return obtain_jwt_token
+    # print ('xxxxxxxxxxxxxxxxxxxx')
 
 class UserViewSet(BaseViewSet):
     """docstring for UserViewSet"""

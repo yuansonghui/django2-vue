@@ -30,6 +30,7 @@ const user = {
     // 登录
     Login({ commit }, userInfo) {
       userInfo.username = userInfo.username.trim()
+      userInfo.password = md5(userInfo.password)
       return baseApi({'data': userInfo, 'functionName': 'login'}).then(response => {
           const data = response
           setToken(data.token)
@@ -75,14 +76,6 @@ const user = {
         commit('SET_TOKEN', '')
         removeToken()
         resolve()
-      })
-    },
-
-    //创建用户
-    CreateUser({ commit }, userInfo){
-      return baseApi({'data': userInfo, 'functionName': 'CreateUser'}).then(res =>{
-        console.log()
-      })
       })
     }
   }
