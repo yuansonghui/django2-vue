@@ -30,6 +30,7 @@ const user = {
     // 登录
     Login({ commit }, userInfo) {
       userInfo.username = userInfo.username.trim()
+      userInfo.password = md5(userInfo.password)
       return baseApi({'data': userInfo, 'functionName': 'login'}).then(response => {
           const data = response
           setToken(data.token)

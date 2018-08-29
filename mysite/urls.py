@@ -22,12 +22,14 @@ django.setup()
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
-from rest_framework_jwt.views import obtain_jwt_token
+# from rest_framework_jwt.views import obtain_jwt_token
+from api.views.users import login
 
 
 urlpatterns = [
     path('', TemplateView.as_view(template_name="index.html")),
     path(r'admin/', admin.site.urls),
     path(r'api/user/', include('api.urls.users')),
-    path(r'api/login/', obtain_jwt_token),
+    # path(r'api/login/', obtain_jwt_token),
+    path(r'api/login/', login),
 ]

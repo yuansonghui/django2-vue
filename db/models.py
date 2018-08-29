@@ -1,5 +1,5 @@
 from common.base import utcnow
-from sqlalchemy import Column, Integer, Boolean, String, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, Boolean, String, DateTime, Text
 from db.base import get_session
 from sqlalchemy.ext.declarative import declarative_base
 
@@ -44,20 +44,17 @@ class MysiteBase(object):
             setattr(self, k, v)
 
 
-# class UserExtend(Base, MysiteBase):
-#     __tablename__ = 'user_extend'
-#     username = Column(String(150), ForeignKey("auth_user.username"))
-#     # passwd = Column(String(64), nullable=False)
-#     # email = Column(String(128), nullable=True)
-#     role = Column(String(255), default='member')
-#     phone = Column(String(32), nullable=True)
+class User(Base, MysiteBase):
+    __tablename__ = 'user'
+    username = Column(String(250), nullable=False)
+    password = Column(String(64), nullable=False)
+    email = Column(String(128), nullable=True)
+    role = Column(String(255), default='member')
+    phone = Column(String(32), nullable=True)
+    remark = Column(Text, nullable=True)
 
-#     def __str__(self):
-#         return '%s' % (self.name)
-
-#     def get_token(self):
-#         return '%s:%s' % (self.name, self.token)
-
+    def __str__(self):
+        return '%s' % (self.name)
 
 # class LoginToken(Base):
 #     __tablename__ = 'login_token'

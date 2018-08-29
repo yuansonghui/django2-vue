@@ -72,25 +72,25 @@ TEMPLATES = [
     },
 ]
 
-REST_FRAMEWORK = {
+# REST_FRAMEWORK = {
 
-    'DEFAULT_PERMISSION_CLASSES': (
+#     # 'DEFAULT_PERMISSION_CLASSES': (
 
-        'rest_framework.permissions.IsAuthenticated',
+#         # 'rest_framework.permissions.IsAuthenticated',
 
-    ),
+#     # ),
 
-    'DEFAULT_AUTHENTICATION_CLASSES': (
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
 
-        # 'rest_framework.authentication.TokenAuthentication',
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
+#         'rest_framework.authentication.TokenAuthentication',
+#         # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+#         'rest_framework.authentication.BasicAuthentication',
+#         'rest_framework.authentication.SessionAuthentication',
 
-    ),
+#     ),
 
-    # 'PAGINATE_BY': 10
-}
+#     # 'PAGINATE_BY': 10
+# }
 
 JWT_AUTH = {
     # 表示issue出去的token多久过期，默认是5mins
@@ -116,7 +116,7 @@ DATABASES = {
 # MYSQL_PATH = 'mysql+pymysql://root:ysh123456@127.0.0.1:3306/mysite'
 MYSQL_PATH = 'mysql+mysqlconnector://root:ysh123456@127.0.0.1:3306/mysite'
 
-ADMIN_INFO = {'name': 'admin', 'passwd': 'admin', 'role': 'superuser', 'email': '540309204@qq.com'}
+ADMIN_INFO = {'username': 'admin', 'password': '21232f297a57a5a743894a0e4a801fc3', 'role': 'superuser', 'email': '540309204@qq.com'}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
