@@ -76,14 +76,6 @@ const user = {
         removeToken()
         resolve()
       })
-    },
-
-    //创建用户
-    CreateUser({ commit }, userInfo){
-      return baseApi({'data': userInfo, 'functionName': 'CreateUser'}).then(res =>{
-        console.log()
-      })
-      })
     }
   }
 }

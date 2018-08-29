@@ -17,27 +17,38 @@
           <span class="show-pwd" @click="showPwd"><svg-icon icon-class="eye" /></span>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" style="width:100%;" :loading="loading" @click.native.prevent="handleLogin">
-          Sign in
+        <el-button type="primary" style="width:100%;" :loading="loading" v-if="" @click.native.prevent="handleLogin">
+          登录
+        </el-button>
+        <el-button type="primary" style="width:100%;" :loading="loading" v-if="" @click.native.prevent="handleRegister">
+          注册
         </el-button>
       </el-form-item>
-      <div class="tips">
-        <span style="margin-right:20px;">username: admin</span>
-        <span> password: admin</span>
+      <div class="register">
+        <a href="#" @click.native.prevent="handleLogin">
+        注册
+        </a>
       </div>
     </el-form>
   </div>
 </template>
 
 <script>
-import { isvalidUsername } from '@/utils/validate'
+import { isvalidUsername, isvalidPassword } from '@/utils/validate'
 
 export default {
   name: 'login',
   data() {
     const validateUsername = (rule, value, callback) => {
       if (!isvalidUsername(value)) {
-        callback(new Error('请输入正确的用户名'))
+        callback(new Error('用户名由5-20位数字字母或下划线组成'))
+      } else {
+        callback()
+      }
+    }
+    const isvalidPassword = (rule, value, callback) => {
+      if (!isvalidUsername(value)) {
+        callback(new Error('密码由6-16位，至少包含数字,字母,特殊符号中的两种!'))
       } else {
         callback()
       }
@@ -180,5 +191,10 @@ $light_gray:#eee;
     cursor: pointer;
     user-select: none;
   }
+  .register{
+    a {color: #409EFF; float: right}
+    a:hover {color: #ff5b20;}
+  }
 }
+
 </style>
