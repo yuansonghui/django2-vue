@@ -14,7 +14,6 @@ def successResponse(message='Successed', data={}):
 def datetime2Normal(nowtime):
     return nowtime.strftime("%Y-%m-%d %H:%M:%S")
 
-
 def utcnow():
     """  A tz-aware now  """
-    return datetime.datetime.utcnow().replace(tzinfo=tz.tzutc())
+    return datetime.datetime.utcnow()

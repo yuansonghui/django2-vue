@@ -72,25 +72,26 @@ TEMPLATES = [
     },
 ]
 
-# REST_FRAMEWORK = {
+REST_FRAMEWORK = {
 
-#     # 'DEFAULT_PERMISSION_CLASSES': (
+    'DEFAULT_PERMISSION_CLASSES': (
 
-#         # 'rest_framework.permissions.IsAuthenticated',
+        # 'rest_framework.permissions.IsAuthenticated',
+        'web.permissions.MyIsAuthenticated',
 
-#     # ),
+    ),
 
-#     'DEFAULT_AUTHENTICATION_CLASSES': (
+    # 'DEFAULT_AUTHENTICATION_CLASSES': (
 
-#         'rest_framework.authentication.TokenAuthentication',
-#         # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-#         'rest_framework.authentication.BasicAuthentication',
-#         'rest_framework.authentication.SessionAuthentication',
+    #     'rest_framework.authentication.TokenAuthentication',
+    #     # 'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+    #     # 'rest_framework.authentication.BasicAuthentication',
+    #     'rest_framework.authentication.SessionAuthentication',
 
-#     ),
+    # ),
 
-#     # 'PAGINATE_BY': 10
-# }
+    # 'PAGINATE_BY': 10
+}
 
 JWT_AUTH = {
     # 表示issue出去的token多久过期，默认是5mins
@@ -100,6 +101,8 @@ JWT_AUTH = {
 }
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
+
+TOKEN_LIFE_TIME = 10
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases

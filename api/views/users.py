@@ -1,18 +1,16 @@
 import hashlib
 import time
+import uuid
 
 from rest_framework.decorators import api_view
-# from django.views.decorators.csrf import ensure_csrf_cookie
-# from django.contrib.auth import get_user_model, authenticate, login as auth_login, logout as auth_logout
-
-from api.views.base_views import SuccResponse, ErrorResponse, BaseViewSet
-from django.contrib.auth.models import User
-from db.api import users as db_users
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.response import Response
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import AllowAny
-# from rest_framework_jwt.views import obtain_jwt_token
+from django.contrib.auth.models import User
+
+from api.views.base_views import SuccResponse, ErrorResponse, BaseViewSet
+from db.api import users as db_users
 
 @api_view(['POST'])
 @permission_classes((AllowAny,))
@@ -20,11 +18,12 @@ from rest_framework.permissions import AllowAny
 def login(request):
     username = request.data.get('username')
     password = request.data.get('password')
-    # import pdb;pdb.set_trace()
     ret = db_users.user_authenticate(username, password)
-    return SuccResponse()
-    # return obtain_jwt_token
-    # print ('xxxxxxxxxxxxxxxxxxxx')
+    if ret:
+        token = uuid.uuid4().hex
+        db_users.set_token(username, token)
+        return Response({'token': token})
+    return ErrorResponse('登录失败!')
 
 class UserViewSet(BaseViewSet):
     """docstring for UserViewSet"""
@@ -36,36 +35,41 @@ class UserViewSet(BaseViewSet):
         """
         获取所有用户信息
         """
-        result = []
-        user_query = User.objects.all()
-        for item in user_query:
-            user = {}
-            user['id'] = item.id
-            user['username'] = item.username
-            user['is_active'] = item.is_active
-            user['email'] = item.email
-            user['roles'] = ['superuser'] if item.is_superuser else ['member']
-            result.append(user)
-        return SuccResponse(data=result)
+        # result = []
+        # user_query = User.objects.all()
+        # for item in user_query:
+        #     user = {}
+        #     user['id'] = item.id
+        #     user['username'] = item.username
+        #     user['is_active'] = item.is_active
+        #     user['email'] = item.email
+        #     user['roles'] = ['superuser'] if item.is_superuser else ['member']
+        #     result.append(user)
+        return SuccResponse()
 
     def get_user(self, request):
         """
         获取登录用户信息, 包括用户名, 邮箱, 角色等.
         """
-        item = User.objects.filter(username=request.user.username).first()
-        user = {}
-        user['id'] = item.id
-        user['username'] = item.username
-        user['is_active'] = item.is_active
-        user['email'] = item.email
-        user['roles'] = ['superuser'] if item.is_superuser else ['member']
-        return SuccResponse(data=user)
+        # item = User.objects.filter(username=request.user.username).first()
+        # user = {}
+        # user['id'] = item.id
+        # user['username'] = item.username
+        # user['is_active'] = item.is_active
+        # user['email'] = item.email
+        # user['roles'] = ['superuser'] if item.is_superuser else ['member']
+        return SuccResponse()
 
     def logout(self, request):
         """
         注销用户
         """
-        return SuccResponse()
+        try:
+            token = request.META['HTTP_X_TOKEN']
+            db_users.delete_token(token)
+            return SuccResponse()
+        except:
+            return SuccResponse()
 
     def create_user(self, request):
         username = request.data.get('username')

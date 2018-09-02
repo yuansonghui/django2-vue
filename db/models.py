@@ -56,10 +56,10 @@ class User(Base, MysiteBase):
     def __str__(self):
         return '%s' % (self.name)
 
-# class LoginToken(Base):
-#     __tablename__ = 'login_token'
-#     id = Column(Integer, autoincrement=True, primary_key=True)
-#     username = Column(String(64), nullable=False)
-#     role = Column(String(255), default='member')
-#     token = Column(String(64))
-#     # server_dbid = Column(Integer, ForeignKey("sdsom_server.id"), nullable=True)
+
+class Token(Base):
+    __tablename__ = 'token'
+    id = Column(Integer, autoincrement=True, primary_key=True)
+    username = Column(String(64), nullable=False)
+    token = Column(String(64))
+    created_at = Column(DateTime, default=utcnow)

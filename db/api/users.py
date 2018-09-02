@@ -1,4 +1,5 @@
 from db import models
+from common import base
 from db.base import get_session, model_query
 
 
@@ -46,24 +47,31 @@ def user_authenticate(username, password):
     return False
 
 
-# def get_user_token(username):
-#     user = model_query(models.LoginToken).filter_by(username=username).first()
-#     if user:
-#         return user.token
-#     return ''
+def set_token(username, token):
+    session = get_session()
+    with session.begin():
+        token_ref = model_query(models.Token, session=session).filter_by(username=username).first()
+        if token_ref:
+            token_ref.token = token
+            token_ref.created_at = base.utcnow()
+        else:
+            token_ref = models.Token()
+            token_ref.username = username
+            token_ref.token = token
+            session.add(token_ref)
+        return True
 
 
-# def set_user_token(username, role, token):
-#     session = get_session()
-#     with session.begin():
-#         user = model_query(models.LoginToken).filter_by(username=username).first()
-#         if user:
-#             user.token = token
-#             user.role = role
-#         else:
-#             token_ref = models.LoginToken()
-#             token_ref.token = token
-#             token_ref.username = username
-#             token_ref.role = role
-#             session.add(token_ref)
-#     return True
+def get_token_info(token):
+    token_ref = model_query(models.Token).filter_by(token=token).first()
+    if token_ref:
+        return {'username': token_ref.username,
+                'created_at': token_ref.created_at}
+    return {}
+
+
+def delete_token(token):
+    session = get_session()
+    with session.begin():
+        model_query(models.Token, session=session).filter_by(token=token).delete()
+    return True
